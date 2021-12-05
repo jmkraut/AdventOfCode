@@ -5,7 +5,7 @@ import AdventOfCode.Helpers;
 
 public class D3P1 {
     public static void main(String[] args) throws IOException {
-        ArrayList<String> list = Helpers.GenerateArrayListFromFile("AdventOfCode\\AOC_D3\\dataset.txt");
+        ArrayList<String> list = Helpers.GenerateArrayListFromFile("AdventOfCode\\Day_3\\dataset_test.txt");
         char[][] main = Helpers.ConvertStringArrayListTo2DCharArray(list, list.size(), list.get(0).length());
 
         String gamma = "";

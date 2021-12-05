@@ -8,7 +8,7 @@ public class D2P2 {
         int horizontal_pos = 0;
         int depth = 0;
         int aim = 0;
-        ArrayList<String> list = Helpers.GenerateArrayListFromFile("AdventOfCode\\AOC_D2\\dataset.txt");
+        ArrayList<String> list = Helpers.GenerateArrayListFromFile("AdventOfCode\\Day_2\\dataset.txt");
 
         for(String command : list) {
             String[] commands = command.split(" ");
