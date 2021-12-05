@@ -1,21 +1,23 @@
-package AdventOfCode.AOC_D3;
+package AdventOfCode.Day_3;
 import java.io.IOException;
 import java.util.ArrayList;
 import AdventOfCode.Helpers;
 
-public class AOC_D3 {
+public class D3P2 {
     public static void main(String[] args) throws IOException {
         ArrayList<String> list = Helpers.GenerateArrayListFromFile("AdventOfCode\\AOC_D3\\dataset.txt");
         char[][] main = Helpers.ConvertStringArrayListTo2DCharArray(list, list.size(), list.get(0).length());
 
         String gamma = "";
         String epsilon = "";
-        int rowLength = main[0].length; // Stops out of bound 
+
+        int rowLength = main[0].length;
+        int columnLength = main.length;
 
         for(int row = 0; row < rowLength; row++) {
             int bit1Counter = 0;
             int bit0Counter = 0;
-            for(int col = 0; col < main.length; col++) {
+            for(int col = 0; col < columnLength; col++) {
                 if(main[col][row] == '1') {
                     bit1Counter++;
                 } else {
