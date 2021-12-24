@@ -24,4 +24,27 @@ public class Helpers {
         }
         return main;
     }
+
+    public static int[] ConvertStringArrayToIntArray(String[] array) {
+        int[] returnArray = new int[array.length];
+        for (int i = 0; i < array.length; i++)
+        {
+            returnArray[i] = Integer.parseInt(array[i]);
+        }
+        return returnArray;
+    }
+
+    public static int[][][] ConvertIntArrayTo3DIntArray(int[] array, int matrices, int rows, int cols) {
+        int[][][] returnArray = new int[matrices][rows][cols];
+        int counter = 0;
+        for(int matrix = 0; matrix < matrices; matrix++){
+            for(int row = 0; row < rows; row++) {
+                for(int col = 0; col < cols; col++) {
+                    returnArray[matrix][row][col] = array[counter];
+                    counter++;
+                }
+            }
+        }
+        return returnArray;
+    }
 }
