@@ -3,7 +3,6 @@ package AdventOfCode.Day_4;
 import AdventOfCode.Helpers;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
